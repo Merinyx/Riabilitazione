@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:backgroundTint="#74FFFFFF"
+    android:backgroundTintMode="src_atop"
+    android:layout_centerHorizontal="true"
+    tools:context=".informazionipersonali">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="137dp"
+        android:layout_height="136dp"
+        android:background="#34B546E4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155"
+        app:srcCompat="@drawable/_327802_200"
+        tools:srcCompat="@drawable/_327802_200" />
+
+    <TextView
+        android:id="@+id/nomePaziente"
+        android:layout_width="142dp"
+        android:layout_height="36dp"
+        android:text="Nome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/cognomePaziente"
+        android:layout_width="142dp"
+        android:layout_height="36dp"
+        android:text="Cognome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <TextView
+        android:id="@+id/datadinascita"
+        android:layout_width="142dp"
+        android:layout_height="36dp"
+        android:text="Data di Nascita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <TextView
+        android:id="@+id/idPaziente"
+        android:layout_width="322dp"
+        android:layout_height="35dp"
+        android:text="Codice Personale"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datadinascita"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/descrizioneTerapia"
+        android:layout_width="323dp"
+        android:layout_height="216dp"
+        android:text="Descrizione Terapia Riabilitativa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPaziente"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menuprincipale1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9621AF"
+        android:backgroundTint="#D3AB5EBC"
+        android:text="Indietro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descrizioneTerapia"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <TextView
+        android:id="@+id/txtvisione1"
+        android:layout_width="331dp"
+        android:layout_height="20dp"
+        android:text="AREA PERSONALE PAZIENTE"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:backgroundTint="#74FFFFFF"
+    android:backgroundTintMode="src_atop"
+    android:layout_centerHorizontal="true"
+    tools:context=".ProgressoPaziente">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menuprincipale3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9621AF"
+        android:backgroundTint="#D3AB5EBC"
+        android:text="Indietro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+
+    <TextView
+        android:id="@+id/desprogresso"
+        android:layout_width="356dp"
+        android:layout_height="111dp"
+        android:layout_marginBottom="48dp"
+        android:text="descrizione"
+        app:layout_constraintBottom_toTopOf="@+id/menuprincipale3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/visitagrafica"
+        android:layout_width="357dp"
+        android:layout_height="241dp"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toTopOf="@+id/desprogresso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
